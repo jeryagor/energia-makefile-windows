@@ -46,8 +46,9 @@
 #
 # In case you use a specific version of the Energia software, you may want to
 # indicate it through the following values:
-#     ARDUINOCONST => defaults to 101 if not provided
-#     ENERGIACONST => defaults to  11 if not provided
+#     ARDUINOCONST
+#     ENERGIACONST
+# Default values are provided below.
 #
 # This makefile defines the following goals for use on the command line when you
 # run make:
