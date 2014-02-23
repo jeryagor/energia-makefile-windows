@@ -69,11 +69,16 @@
 #_______________________________________________________________________________
 #
 
+# Uncomment these lines and change their values if you want them once and for all
+# in the makefile
+# ENERGIADIR := /D/Programmes/energia-0101E0011
+# ENERGIABOARD := lpmsp430g2553
+
 # Default Arduino and Energia versions
 ARDUINOCONST ?= 101
 ENERGIACONST ?= 11
 
-# Default Energia software directory, value has to be provided by the user
+# Default Energia software directory, check if value has been provided by the user
 ifndef ENERGIADIR
 $(error ENERGIADIR is not set correctly; Energia software not found)
 endif
@@ -102,11 +107,12 @@ LIBRARIES += $(filter $(notdir $(wildcard $(ENERGIADIR)/hardware/msp430/librarie
 endif
 
 # Software
-CC := msp430-gcc
-CXX := msp430-g++
-AR := msp430-ar
-MSPDEBUG := mspdebug
-MSP430SIZE := msp430-size
+MSPBINDIR := $(ENERGIADIR)/hardware/tools/msp430/bin
+CC := $(MSPBINDIR)/msp430-gcc
+CXX := $(MSPBINDIR)/msp430-g++
+AR := $(MSPBINDIR)/msp430-ar
+MSP430SIZE := $(MSPBINDIR)/msp430-size
+MSPDEBUG := $(ENERGIADIR)/hardware/tools/msp430/mspdebug/mspdebug
 
 # Files
 TARGET := $(if $(TARGET),$(TARGET),a.out)
