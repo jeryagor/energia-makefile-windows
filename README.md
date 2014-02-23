@@ -34,6 +34,8 @@ Usage instructions
 
 The Energia makefile needs two variables to be defined by the user: ENERGIADIR and ENERGIABOARD.
 
+You can either set these variables in the commandline or write them directly in the makefile itself.
+
 ### ENERGIADIR
 
 ENERGIADIR should point to your Energia installation.
@@ -42,7 +44,7 @@ Please note that makefile forbids the usage of colons in filepaths: if you insta
 
 For example, this is a valid way to set the variable:
 
-    set ENERGIADIR=/D/Programmes/energia-0101E0011
+    ENERGIADIR=/D/Programmes/energia-0101E0011
 
 ### ENERGIABOARD
 
@@ -54,7 +56,7 @@ To get a list of possible values, type the following:
 
 For example, this is a valid way to set the variable:
 
-    set ENERGIABOARD=lpmsp430g2553
+    ENERGIABOARD=lpmsp430g2553
 
 ### Makefile targets
 
