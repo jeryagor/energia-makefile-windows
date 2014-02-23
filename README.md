@@ -1,4 +1,4 @@
-energia-makefile-windows
+MSP430 Energia Makefile
 ========================
 
 An Energia makefile to be used under Windows with MinGW / MSYS.
