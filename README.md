@@ -2,7 +2,10 @@ energia-makefile-windows
 ========================
 
 An Energia makefile to be used under Windows with MinGW / MSYS.
-This makefile is based on the previous work of elpaso (see the [energia-makefile repository](https://github.com/elpaso/energia-makefile)).
+
+This makefile is intended to work on MSP430 launchpads using the Energia libraries.
+
+It is based on the previous work of elpaso (see the [energia-makefile repository](https://github.com/elpaso/energia-makefile)).
 
 Prerequisites
 --------------------
