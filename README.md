@@ -7,14 +7,23 @@ This makefile is based on the previous work of elpaso (see the [energia-makefile
 Prerequisites
 --------------------
 
+
+### Energia
+
 In order to build an Energia sketch with this makefile, you will first need to install the Energia software on your computer.
+
 In order to do so, please go on the [Energia download page](http://energia.nu/download/), get the Windows archive and unzip it wherever you want. 
 
+### MSYS
+
 You will also need the make tool as well as some Unix-like commandline utilities.
+
 The easiest way I found is to [install MinGW](http://sourceforge.net/projects/mingw/files/) with the msys-base package.
+
 At the end of MinGW installation, the MinGW GUI should start: you can then choose to install msys-base by checking it in the list and going to Installation > Apply changes.
 
 By default, msys executables are installed in C:\MinGW\msys\1.0\bin
+
 For convenience, just add this directory to your Path variable.
 
 Usage instructions
